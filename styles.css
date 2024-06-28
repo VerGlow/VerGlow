@@ -1,0 +1,148 @@
+/* Reset CSS for better cross-browser compatibility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #556B2F; /* Color matching your logo */
+    background-color: #F5FFFA; /* Light background color */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #E6E6FA; /* Light lavender matching the logo theme */
+}
+
+header .logo {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #2E8B57; /* Darker green for the text */
+}
+
+nav {
+    background-color: #8FBC8F; /* Light green */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White */
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #556B2F; /* Dark olive green */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome, .products, .contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #8FBC8F;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome:hover, .products:hover, .contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #2E8B57; /* Darker green for the text */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #556B2F; /* Dark olive green */
+    margin-bottom: 20px;
+}
+
+.product {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #8FBC8F;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background-color: #2E8B57;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #556B2F;
+}
+
+footer {
+    background-color: #8FBC8F; /* Light green */
+    color: #FFFFFF; /* White */
+    text-align: center;
+    padding: 10px;
+}
