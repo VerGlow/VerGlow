@@ -11,6 +11,12 @@ body {
     background-color: #F5FFFA; /* Light background color */
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -32,7 +38,12 @@ h1 {
 
 nav {
     background-color: #8FBC8F; /* Light green */
-    padding: 10px;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
@@ -57,17 +68,15 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 20px;
-    text-align: center;
+    padding: 20px 0;
 }
 
 .welcome, .products, .contact {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #FFFFFF;
     border: 2px solid #8FBC8F;
     border-radius: 10px;
+    margin-bottom: 40px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -88,8 +97,15 @@ p {
     margin-bottom: 20px;
 }
 
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .product {
-    margin-bottom: 20px;
+    flex: 0 1 calc(33% - 40px);
+    margin-bottom: 40px;
     transition: transform 0.3s ease;
 }
 
@@ -100,6 +116,15 @@ p {
     margin: 0 auto;
     display: block;
     border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1.2em;
 }
 
 .product:hover {
@@ -144,5 +169,5 @@ footer {
     background-color: #8FBC8F; /* Light green */
     color: #FFFFFF; /* White */
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
 }
