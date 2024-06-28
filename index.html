@@ -5,54 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VerGlow - Natural Beauty</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-    <img src="./verglow-logo.png" alt="VerGlow Logo" class="logo">
-</header>    
+        <div class="container">
+            <img src="VerGlow.png" alt="VerGlow Logo" class="logo">
+            <h1>VerGlow</h1>
+        </div>
+    </header>
     <nav>
-        <ul>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><span id="cart-count">0</span> Cart</li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <div class="section" id="products">
-        <h2>Our Products</h2>
-        <div class="filter-buttons">
-            <button class="filter-btn" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="mask">Masks</button>
-            <button class="filter-btn" data-filter="salt">Salts</button>
-        </div>
-        <div class="products-container">
-            <div class="product mask">
-                <img src="mud-mask.jpg" alt="Dead Sea Mud Mask">
-                <h3>Dead Sea Mud Mask</h3>
-                <p>Price: $29.99</p>
-                <button class="btn add-to-cart">Add to Cart</button>
+    <main>
+        <section id="welcome" class="welcome">
+            <div class="container">
+                <h2>Welcome to VerGlow</h2>
+                <p>
+                    At VerGlow, we are deeply connected to the natural wonders of the Dead Sea. 
+                    Having established close relations in the region, we’ve witnessed firsthand the transformative 
+                    power of Dead Sea minerals. People from around the globe travel to experience the healing benefits 
+                    of Dead Sea mud on their skin. Our products, including the Dead Sea Mud Mask and Bath Salts, bring 
+                    these ancient, rejuvenating minerals directly to you, offering a touch of this timeless oasis in every jar.
+                </p>
             </div>
-            <div class="product salt">
-                <img src="bath-salts.jpg" alt="Bath Salts">
-                <h3>Bath Salts</h3>
-                <p>Price: $19.99</p>
-                <button class="btn add-to-cart">Add to Cart</button>
+        </section>
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-list">
+                    <div class="product">
+                        <img src="images/mud_mask.jpg" alt="Dead Sea Mud Mask">
+                        <h3>Dead Sea Mud Mask</h3>
+                        <p>Price: $29.99</p>
+                        <p>Description: A luxurious mud mask that detoxifies and revitalizes your skin.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/bath_salts.jpg" alt="Dead Sea Bath Salts">
+                        <h3>Dead Sea Bath Salts</h3>
+                        <p>Price: $19.99</p>
+                        <p>Description: Soothing bath salts that relax your muscles and soften your skin.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/extra_mineral_soap.jpeg" alt="Extra Mineral Soap">
+                        <h3>Extra Mineral Soap</h3>
+                        <p>Price: $9.99</p>
+                        <p>Description: Natural soap enriched with Dead Sea minerals for healthy, glowing skin.</p>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 VerGlow. All rights reserved.</p>
         </div>
-    </div>
-    
-    <div class="section" id="story">
-        <h2>Our Story</h2>
-        <p>At VerGlow, we are deeply connected to the natural wonders of the Dead Sea. Having established close relations in the region, we've witnessed firsthand the transformative power of Dead Sea minerals. People from around the globe travel to experience the healing benefits of Dead Sea mud on their skin. Our products, including the Dead Sea Mud Mask and Bath Salts, bring these ancient, rejuvenating minerals directly to you, offering a touch of this timeless oasis in every jar.</p>
-    </div>
-    
-    <div class="section" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@verglow.com</p>
-        <p>Phone: (555) 123-4567</p>
-    </div>
-
-    <script src="script.js"></script>
+    </footer>
 </body>
 </html>
