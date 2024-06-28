@@ -1,58 +1,37 @@
-/* Reset CSS for better cross-browser compatibility */
-* {
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #2E8B57; /* Dark green matching your logo */
-    background-color: #FAFAFA; /* Light background color */
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #f0f5f1;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #a7c4b5;
     padding: 20px;
-    background-color: #8FBC8F; /* Light green matching the logo theme */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-header .logo {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
+.logo {
+    max-width: 200px;
+    transition: transform 0.3s ease;
 }
 
-h1 {
-    font-size: 2.5em;
-    color: #556B2F; /* Darker green for the text */
+.logo:hover {
+    transform: scale(1.05);
 }
 
 nav {
-    background-color: #2E8B57; /* Dark green */
-    padding: 15px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #86a496;
+    padding: 10px;
     position: sticky;
     top: 0;
-    z-index: 1000;
-}
-
-nav .container {
-    display: flex;
-    justify-content: center;
+    z-index: 100;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -62,119 +41,61 @@ nav ul li {
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #FFFFFF; /* White */
-    font-size: 1.1em;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #FAFAFA; /* Slightly lighter white */
+    color: #f0f5f1;
 }
 
-main {
-    padding: 20px 0;
+.section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
-.welcome, .products, .contact {
-    padding: 60px 20px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.welcome:hover, .products:hover, .contact:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    font-size: 2em;
-    color: #2E8B57; /* Darker green for the text */
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.2em;
-    color: #556B2F; /* Dark olive green */
-    margin-bottom: 20px;
-}
-
-.product-list {
+.products-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .product {
-    flex: 1 1 calc(33% - 40px);
-    margin: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-}
-
-.product h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.product p {
-    font-size: 1.2em;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
 }
 
 .product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
-form label {
-    font-size: 1.2em;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #8FBC8F;
-    border-radius: 5px;
-}
-
-form button {
+.btn {
+    display: inline-block;
     padding: 10px 20px;
-    font-size: 1.2em;
-    color: #FFFFFF;
-    background-color: #2E8B57;
-    border: none;
+    background-color: #86a496;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #556B2F;
-}
-
-footer {
-    background-color: #2E8B57; /* Dark green */
-    color: #FFFFFF; /* White */
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+.btn:hover {
+    background-color: #6a8276;
 }
