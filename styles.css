@@ -1,4 +1,3 @@
-/* Reset CSS for better cross-browser compatibility */
 * {
     margin: 0;
     padding: 0;
@@ -19,17 +18,27 @@ body {
 
 header {
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;
     justify-content: center;
     padding: 20px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in case of fallback */
+}
+
+.logo-container {
+    margin-bottom: 10px; /* Adjust spacing between logo and text */
 }
 
 header .logo {
-    width: 150px;
+    width: 200px; /* Adjust as needed */
     height: auto;
+    display: block; /* Ensure the image behaves correctly */
+    margin: 0 auto; /* Center the logo horizontally */
 }
+
+
 
 h1 {
     font-size: 2.5em;
