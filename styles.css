@@ -33,13 +33,6 @@ header {
     margin-bottom: 10px; /* Adjust spacing between logo and text */
 }
 
-header .logo {
-    width: 200px; /* Adjust as needed */
-    height: auto;
-    display: block; /* Ensure the image behaves correctly */
-    margin: 0 auto; /* Center the logo horizontally */
-}
-
 /* New logo class */
 .logo {
     width: 100%;
