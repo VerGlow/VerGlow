@@ -1,3 +1,4 @@
+/* General reset and body styling */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@ body {
     margin: 0 auto;
 }
 
+/* Header styling */
 header {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -38,11 +40,20 @@ header .logo {
     margin: 0 auto; /* Center the logo horizontally */
 }
 
+/* New logo class */
+.logo {
+    width: 100%;
+    max-width: 500px; /* Adjust this value to fit your desired width */
+    height: auto;
+}
+
+/* Heading styling */
 h1 {
     font-size: 2.5em;
     color: #616A6B; /* Updated text color */
 }
 
+/* Navigation styling */
 nav {
     background-color: #868686; /* Dark green */
     padding: 15px 0;
@@ -78,6 +89,7 @@ nav ul li a:hover {
     color: #FAFAFA; /* Slightly lighter white */
 }
 
+/* Main content styling */
 main {
     padding: 20px 0;
 }
@@ -145,6 +157,7 @@ p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Form styling */
 form {
     display: flex;
     flex-direction: column;
@@ -180,6 +193,7 @@ form button:hover {
     background-color: #556B2F;
 }
 
+/* Footer styling */
 footer {
     background-color: #868686; /* Dark green */
     color: #FFFFFF; /* White */
