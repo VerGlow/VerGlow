@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    color: #2E8B57; /* Dark green matching your logo */
+    color: #616A6B; /* Updated text color */
     background-color: #FAFAFA; /* Light background color */
 }
 
@@ -38,11 +38,9 @@ header .logo {
     margin: 0 auto; /* Center the logo horizontally */
 }
 
-
-
 h1 {
     font-size: 2.5em;
-    color: #33FF8D; /* Darker green for the text */
+    color: #616A6B; /* Updated text color */
 }
 
 nav {
@@ -100,13 +98,13 @@ main {
 
 h2 {
     font-size: 2em;
-    color: #33FF8D; /* Darker green for the text */
+    color: #616A6B; /* Updated text color */
     margin-bottom: 20px;
 }
 
 p {
     font-size: 1.2em;
-    color: #33FF8D; /* Dark olive green */
+    color: #616A6B; /* Updated text color */
     margin-bottom: 20px;
 }
 
@@ -133,11 +131,13 @@ p {
 
 .product h3 {
     font-size: 1.5em;
+    color: #616A6B; /* Updated text color */
     margin: 10px 0;
 }
 
 .product p {
     font-size: 1.2em;
+    color: #616A6B; /* Updated text color */
 }
 
 .product:hover {
@@ -153,6 +153,7 @@ form {
 
 form label {
     font-size: 1.2em;
+    color: #616A6B; /* Updated text color */
     margin: 10px 0 5px;
 }
 
